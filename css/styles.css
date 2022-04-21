@@ -52,8 +52,7 @@ font-weight: 700;
 line-height: 1.17;
 display: block;
 }
-.header {padding-top: 24px;
-padding-bottom:25px;
+.header {
 border:1px solid var(--color-border-bottom-header);
 }
 
@@ -63,7 +62,7 @@ width: 100%;
 height: 4px;
 position: absolute;
 left: 0;
-bottom: -29px;
+bottom: -32px;
 border-radius: 2px;
 background-color: var(--accent-color);}
 
@@ -81,19 +80,22 @@ max-width: 1600px;
 margin-left: auto;
 margin-right:auto;
 }
- .section {padding-top: 94px;
-padding-bottom:94px ;}
+
 .card-set {display: flex;
 flex-wrap: wrap;
-margin-right:-30px;
-margin-bottom:-30px;  
+margin-left:-30px;
+margin-top:-30px;  
 }
-.about {padding-bottom: 0;}
-
+.about {padding-bottom: 94px;
+padding-top: 94px;}
+.work {padding-bottom: 94px;}
 .header .logo {
 margin-right: 93px;
+padding-top: 24px;
+padding-bottom: 25px;
 }
-
+.section {padding-top: 94px;
+padding-bottom: 94px;}
 
 .header-container {display: flex;
 align-items: center;
@@ -107,7 +109,9 @@ align-items: center;
 .header-container-list {display: flex;}
 .header-contact {margin-left: auto;}
 
-.header-contact-list {display: flex;}
+.header-contact-list {display: flex;
+padding-top: 32px;
+padding-bottom: 32px;}
 .header-contact-item:not(:last-child) {margin-right: 50px;} 
 
 
@@ -128,6 +132,7 @@ letter-spacing: 0.02em;
 display: flex;
 align-items: center;
 transition: color var(--transition);
+
  }
 
    
@@ -209,13 +214,13 @@ height:70px;
 }
 .future-container { 
 height: 120px;
-align-content: center;
+align-items: center;
 justify-content: center;
 border-radius: 4px;
 display: flex;
 background: var(--bg-color-team);
 margin-bottom: 30px;
-padding: 25px;
+
 }
 
 
@@ -248,16 +253,17 @@ background-color:var(--bgcolor-menu-work);
 color: var(--first-color);
 height:70px ;
 width: 100%;
-align-content: center;
-padding-top:27px;
-padding-bottom: 27px;
+align-items: center;
+
 }
 .menu-title-text {line-height: 1.17;
 text-transform: uppercase;
 font-size: 14px;
 letter-spacing: 0.03em;}
 
-.team {background-color: var(--bg-color-team);}
+.team {background-color: var(--bg-color-team);
+padding-top: 94px;
+padding-bottom: 94px;}
 
 .team-item {flex-basis: calc(100% / 4 - 30px);
 background-color: var(--first-color);
@@ -310,7 +316,8 @@ height: 20px;}
 .social-link:hover,.social-link:focus {background-color: var(--accent-color);
 color:var(--first-color);}
 .footer .social-icon {color: var(--first-color);}
-
+.clients {padding-top: 94px;
+padding-bottom: 94px;}
 .client-item {flex-basis: calc(100% / 6 - 30px);
 }
 .client-link {display: flex;
@@ -359,12 +366,12 @@ margin-bottom: 20px;}
 color: var(--first-color);
 }
 .footer-container {display: flex;
-align-items: baseline;}
-.footer-wrap {
-align-items: baseline; justify-content: center;
+align-items: baseline;
+justify-content: space-between;
 }
-.footer-cont-item:first-child {margin-right: 70px;}
-.footer-wrap {margin-left: 93px;}
+
+.footer-contact {margin-right: 70px;}
+.footer-wrap {margin-right: 93px;}
 
 
 .footer-title {font-size: 14px;
@@ -387,7 +394,8 @@ justify-content: center;
 margin-left: 12px;
 
 }
-.footer-btn {display: flex;}
+.footer-btn {display: flex;
+}
 
 .footer-input {width: 358px;
 height: 50px;
@@ -405,7 +413,8 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     transition: color var(--transition), background-color var(--transition), box-shadow var(--transition); }
 .icon-footer {fill: var(--first-color);
 margin-left: 10px;
-
+display: flex;
+align-items: center;
 
 
 }
@@ -523,8 +532,8 @@ right:8px;
 .modal-close:hover, .modal-close:focus {fill: var(--accent-color);
 transition: fill var(--transition);}
 
-.input-wrap:focus-within, .input-wrap:hover {fill: var(--accent-color); }
-.form-input:focus-within, .form-input:hover {border-color:var(--accent-color);}
+.input-wrap:focus-within, .input-wrap:hover {fill: var(--accent-color); transition: fill var(--transition); }
+.form-input:focus-within, .form-input:hover {border-color:var(--accent-color);transition: color var(--transition);}
 
     
 .input-icon {width:18px;
@@ -577,20 +586,24 @@ flex-direction: column;
 text-align: center;}
 
 
-
+.coment-form {margin-bottom: 20px;}
 .policy-icon {fill: transparent;
 border-radius: 2px;
 border: 2px solid  #212121;
-margin-right: 5px;}
+margin-right: 5px;
+font-weight: 400;}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+
 .policy-check:checked + .check-text .policy-icon {border: none;
 background-color: var(--accent-color);}
 
-.policy-icon:hover, .policy-icon:focus {border: solid var(--accent-color);}
-
+.policy-icon:hover  {border: solid var(--accent-color);
+transition: fill var(--transition);}
+.policy-check:focus +.check-text span {border: solid var(--accent-color);}
 .policy-text {text-decoration-line:underline;
 color: var(--accent-color);}
 .policy-link {color: var(--accent-color);
-margin-left: 5px;}
+margin-left: 5px;
+font-weight: 400;}
 .modal-btn {margin: 0 auto;
 
 display: block;
@@ -599,8 +612,8 @@ display: block;
 
 .modal-btn:hover, .modal-btn:focus {box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.15);transition: color var(--transition), background-color var(--transition), box-shadow var(--transition);}
 
-.is-hidden {opacity:0;
-    pointer-events: none;
-    visibility: hidden;}
+.is-hidden {opacity:0;                                                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                        pointer-events: none;                                   
+    visibility: hidden;}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
 
 
